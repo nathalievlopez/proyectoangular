@@ -93,3 +93,65 @@
 <span>
   {{estudiantes.sort()}}
 </span>
+<br>
+<br>
+<h2>
+  {{animales[2].habitat}}
+</h2>
+<br>
+<ul>
+
+  <li>{{animales[5].nombre}}</li>
+
+  <li>{{animales[6].nombre}}</li>
+
+  <li>{{animales[7].nombre}}</li>
+
+</ul>
+<ul>
+  <li *ngFor="let animal of animales">
+
+    {{animal.nombre}}
+
+  </li>
+</ul>
+<br><br>
+<div *ngFor="let animal of animales" class="tarjeta">
+
+  <img class="imagen" [src]="animal.imagen">
+
+  <div class="datos">
+
+    <span class="nombre">
+      {{animal.nombre}}
+    </span>
+    <br>
+    <br>
+    <span>
+     Peso( {{animal.pesoPromedioKg}})
+    </span>
+    <br>
+    <span>
+     Numero de patas ( {{animal.numeroPatas}} )
+    </span>
+    <br>
+    <span>
+     Color predominante ( {{animal.colorPredominante}} )
+    </span>
+    <br>
+    <span>
+     Alimentación ( {{animal.alimentacion}} )
+    </span>
+    <br>
+    <span>
+     Habitat ( {{animal.habitat}} )
+    </span>
+    <br>
+    <span>
+     Vuela? ( {{animal.vuela}} )
+    </span>
+    <br><br>
+
+  </div>
+
+</div>
