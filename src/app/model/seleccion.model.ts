@@ -1,23 +1,23 @@
 export interface Equipo {
     name: string;
     countryName: string;
-    alternativeName: string;
-    colors: string;
-    wonTittles: Titulo; 
-    coachNames: string;
+    alternativeName: string[];
+    colors: string[];
+    wonTittles: Titulo[]; 
+    coachName: string;
     captainName: string;
     logo: string;
     abbreviation: string;
     topScorer:Goleador;
     estadio: Estadio;
-    jugadores: Player;
-    
+    jugadores: Player[];
+
 }
 export interface Titulo {
 
     name: string;
     numberOfWins:number;
-    YearsOfWins: number;
+    yearsOfWins: number[];
 
 }
 

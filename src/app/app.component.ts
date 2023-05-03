@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Equipo } from './model/seleccion.model';
 
 @Component({
   selector: 'app-root',
@@ -119,6 +120,160 @@ export class AppComponent {
     }
 
    ]
+
+
+   japon:Equipo= {
+    name: 'Selección de futbol de japon',
+    countryName: 'Japón',
+    alternativeName: ["	Asociación de Fútbol de Japón" , "Confederación Asiática de Fútbol" ],
+    colors: ["blanco","rojo"],
+    wonTittles: [{
+      name: "Asia Championship",
+      numberOfWins: 4,
+      yearsOfWins: [2011,2004,2000,1992],
+    },
+    {
+      name:"Copa Mundial",
+      numberOfWins: 0,
+      yearsOfWins: [0],
+       },
+  
+    ],
+    coachName:" Akira Nishino",
+    captainName: "Maya Yoshida",
+    logo: "https://i.pinimg.com/736x/86/63/77/866377cad806006fb53bc10254274c5f.jpg",
+    abbreviation: "JFA",
+    topScorer: {
+      name:"Kunishige Kamamoto",
+      numberOfGoals:75,
+  
+    },
+    estadio:{
+      name:"New National Stadium Shin-Kokuritsu",
+      nickname:"N/A",
+      location:"10-2, Kasumigaoka-machi, Shinjuku, Tokyo, Japan",
+      capacity: 80016,
+    },
+    jugadores:[{
+      name:"Daniel",
+      lastname:"Schmidt",
+      age: 31,
+      height:"1,97 m",
+      placeOfBirth: "Illinois",
+      position:"Portero",
+      currentClub:"Sint-Truidense VV",
+      shirtNumber: 21,
+    },
+    {
+      name:"Keisuke",
+      lastname:"Osako",
+      age: 23,
+      height:"1,88 m",
+      placeOfBirth: "Izumi, Kagoshima",
+      position:"Portero",
+      currentClub:"Sanfrecce Hiroshima",
+      shirtNumber: 1,
+    },
+    {
+      name:"Yukinari",
+      lastname:"Sugawara",
+      age: 22,
+      height:"1,79 m",
+      placeOfBirth: "Toyokawa, Aichi",
+      position:"Lateral derecho",
+      currentClub:"AZ Alkmaar",
+      shirtNumber: 2,
+    },
+    {
+      name:"Ko",
+      lastname:"Itakura",
+      age: 26,
+      height:"1,88 m",
+      placeOfBirth: "Yokohama, Kanagawa",
+      position:"Defensa central",
+      currentClub:"Borussia Mönchengladbach",
+      shirtNumber: 3,
+    },
+    {
+      name:"Wataru",
+      lastname:"Endo",
+      age: 30,
+      height:"1,78 m",
+      placeOfBirth: "Yokohama, Kanagawa",
+      position:"Pivote",
+      currentClub:"VfB Stuttgart",
+      shirtNumber: 3,
+    },
+    {
+      name:"Ritsu",
+      lastname:"Doan",
+      age: 24,
+      height:"1,72 m",
+      placeOfBirth: "Amagasaki, Hyogo",
+      position:"Pivote",
+      currentClub:"Extremo derecho",
+      shirtNumber: 42,
+    },
+    {
+      name:"Ao",
+      lastname:"Tanaka",
+      age: 24,
+      height:"1,80 m",
+      placeOfBirth: "Kawasaki, Kanagawa",
+      position:"Pivote",
+      currentClub:"Extremo derecho",
+      shirtNumber: 4,
+    },
+    {
+      name:"Shuto",
+      lastname:"Machino",
+      age: 23,
+      height:"1,85 m",
+      placeOfBirth: "Mie",
+      position:"Mediocentro",
+      currentClub:"Delantero centro",
+      shirtNumber: 18,
+    },
+    {
+      name:"Takefusa",
+      lastname:"Kubo",
+      age: 21,
+      height:"1,73 m",
+      placeOfBirth: " Kawasaki, Kanagawa",
+      position:"Extremo derecho",
+      currentClub:"Real Sociedad",
+      shirtNumber: 14,
+    },
+    {
+      name:"Hidemasa",
+      lastname:"Morita",
+      age: 27,
+      height:"1,77 m",
+      placeOfBirth: "Takatsuki, Osaka",
+      position:"Pivote",
+      currentClub:"Sporting de Lisboa",
+      shirtNumber: 5,
+    },
+    {
+      name:"Hiroki",
+      lastname:"Ito",
+      age: 23,
+      height:"1,88 m",
+      placeOfBirth: "Hamamatsu, Shizuoka",
+      position:"Defensa central",
+      currentClub:"VfB Stuttgart",
+      shirtNumber: 21,
+    },
+  
+    ]
+  
+  
+  }
+  
+
+
+
+
 }
 
 
@@ -130,150 +285,3 @@ export class AppComponent {
 
 
 
-const japon= {
-  name: 'Selección de futbol de japon',
-  countryName: 'Japón',
-  alternativeName: ["	Asociación de Fútbol de Japón" , "Confederación Asiática de Fútbol" ],
-  colors: ["blanco","rojo"],
-  wonTittles: [{
-    name: "Asia Championship",
-    numberOfWins:"4",
-    yearsOfWins: [2011,2004,2000,1992],
-  },
-  {
-    name:"Copa Mundial",
-    numberOfWins: 0,
-    YearsOfWins: 0,
-     },
-
-  ],
-  coachName:" Akira Nishino",
-  captainName: "Maya Yoshida",
-  logo: "https://i.pinimg.com/736x/86/63/77/866377cad806006fb53bc10254274c5f.jpg",
-  abbreviation: "JFA",
-  topScorer: {
-    name:"Kunishige Kamamoto",
-    numberOfGoals:75,
-
-  },
-  estadio:{
-    name:"New National Stadium Shin-Kokuritsu",
-    nickname:"N/A",
-    location:"10-2, Kasumigaoka-machi, Shinjuku, Tokyo, Japan",
-    capacity: 80016,
-  },
-  jugadores:[{
-    name:"Daniel",
-    lastname:"Schmidt",
-    age: 31,
-    height:"1,97 m",
-    placeOfBirth: "Illinois",
-    position:"Portero",
-    currentClub:"Sint-Truidense VV",
-    shirtNumber: 21,
-  },
-  {
-    name:"Keisuke",
-    lastname:"Osako",
-    age: 23,
-    height:"1,88 m",
-    placeOfBirth: "Izumi, Kagoshima",
-    position:"Portero",
-    currentClub:"Sanfrecce Hiroshima",
-    shirtNumber: 1,
-  },
-  {
-    name:"Yukinari",
-    lastname:"Sugawara",
-    age: 22,
-    height:"1,79 m",
-    placeOfBirth: "Toyokawa, Aichi",
-    position:"Lateral derecho",
-    currentClub:"AZ Alkmaar",
-    shirtNumber: 2,
-  },
-  {
-    name:"Ko",
-    lastname:"Itakura",
-    age: 26,
-    height:"1,88 m",
-    placeOfBirth: "Yokohama, Kanagawa",
-    position:"Defensa central",
-    currentClub:"Borussia Mönchengladbach",
-    shirtNumber: 3,
-  },
-  {
-    name:"Wataru",
-    lastname:"Endo",
-    age: 30,
-    height:"1,78 m",
-    placeOfBirth: "Yokohama, Kanagawa",
-    position:"Pivote",
-    currentClub:"VfB Stuttgart",
-    shirtNumber: 3,
-  },
-  {
-    name:"Ritsu",
-    lastname:"Doan",
-    age: 24,
-    height:"1,72 m",
-    placeOfBirth: "Amagasaki, Hyogo",
-    position:"Pivote",
-    currentClub:"Extremo derecho",
-    shirtNumber: 42,
-  },
-  {
-    name:"Ao",
-    lastname:"Tanaka",
-    age: 24,
-    height:"1,80 m",
-    placeOfBirth: "Kawasaki, Kanagawa",
-    position:"Pivote",
-    currentClub:"Extremo derecho",
-    shirtNumber: 4,
-  },
-  {
-    name:"Shuto",
-    lastname:"Machino",
-    age: 23,
-    height:"1,85 m",
-    placeOfBirth: "Mie",
-    position:"Mediocentro",
-    currentClub:"Delantero centro",
-    shirtNumber: 18,
-  },
-  {
-    name:"Takefusa",
-    lastname:"Kubo",
-    age: 21,
-    height:"1,73 m",
-    placeOfBirth: " Kawasaki, Kanagawa",
-    position:"Extremo derecho",
-    currentClub:"Real Sociedad",
-    shirtNumber: 14,
-  },
-  {
-    name:"Hidemasa",
-    lastname:"Morita",
-    age: 27,
-    height:"1,77 m",
-    placeOfBirth: "Takatsuki, Osaka",
-    position:"Pivote",
-    currentClub:"Sporting de Lisboa",
-    shirtNumber: 5,
-  },
-  {
-    name:"Hiroki",
-    lastname:"Ito",
-    age: 23,
-    height:"1,88 m",
-    placeOfBirth: "Hamamatsu, Shizuoka",
-    position:"Defensa central",
-    currentClub:"VfB Stuttgart",
-    shirtNumber: 21,
-  },
-
-  ]
-
-
-}
