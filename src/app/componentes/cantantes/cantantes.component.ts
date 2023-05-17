@@ -8,6 +8,10 @@ import { Cantante } from 'src/app/model/cantante.model';
 })
 export class CantantesComponent implements OnInit {
 
+  inputNombre:string="";
+  inputEdad:number= 0;
+  inputVivo:boolean= false;
+
   cantantes:Cantante[]=[
     {
       nombre:'Freddy Mercury',
@@ -59,6 +63,7 @@ export class CantantesComponent implements OnInit {
       edad: 32,
       vivo: true,
     },
+   
   ]
   ngOnInit(): void {
     console.log("Hola");
@@ -75,13 +80,15 @@ export class CantantesComponent implements OnInit {
     console.log(this.cantantes);
     console.table(this.cantantes[2])
     console.log(this.cantantes.length);
+   
+    
     // elimina el ultimo elemento del arreglo//
-    this.cantantes.pop();
+    //this.cantantes.pop();//
     // elimina el primer elemento del arreglo//
-    this.cantantes.shift();
+    //this.cantantes.shift();//
     // elimina la cantidad de elementos del segundo numero de la posicion que es el primer numero//
-    this.cantantes.splice(2,1);
-    console.log(this.cantantes);
+    //this.cantantes.splice(2,1);//
+    //console.log(this.cantantes);//
     // añadir un nuevo elemento al arreglo//
     let nuevoCantante:Cantante={
       nombre: 'Steve Aoki',
@@ -101,10 +108,26 @@ export class CantantesComponent implements OnInit {
     let potencia=this.cantantes.map(cantantes => Math.pow(cantantes.edad,2));
     console.log(potencia);
 
- 
 
+      
+  } 
 
-    
-  }
+  agregarCantante(){
+    console.log("funciona click")
+    let nuevoCantante: Cantante={
+      nombre:this.inputNombre,
+      edad: this.inputEdad,
+      vivo: this.inputVivo,
+    }
+   if (this.inputNombre > "") {
+    if (this.inputEdad > 0) {this.cantantes.push(nuevoCantante)}}
+    this.reset();
+}
+
+reset(){
+  this.inputNombre="";
+  this.inputEdad=0;
+  this.inputVivo= false;
+}
 
 }
